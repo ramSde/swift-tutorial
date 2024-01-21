@@ -1,0 +1,33 @@
+// working with structure 
+
+
+
+struct result{
+    var name : String
+    var result : Bool
+    var enr : Int
+    var total : String {
+         get {
+             return String(result)
+         }
+         set(change){
+         result = Bool(change) ?? true
+         
+            
+         }
+    }
+    
+}
+
+
+var ram = result(name : "ram" , result : true , enr : 1)
+var tushar =  result(name : "tushar", result : true , enr : 2)
+var vipu = result(name : "vipu" , result : true , enr : 3)
+ram.total="false"
+print(ram.result)
+print(ram.total)
+
+
+print("tushar enrollment number \(tushar.enr) pass in exam : \(tushar.result)")
+print("ram  enrollment number \(ram.enr) pass  in exam : \(ram.result) ")
+print("vipendr enrollment number \(vipu.enr) pass in exam : \(vipu.result)")
